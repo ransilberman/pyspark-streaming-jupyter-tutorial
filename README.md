@@ -45,3 +45,18 @@ jupyter-notebook
 - Replace the `SPARK_HOME` value with the SPARK_HOME that you obtained in step #4.
 - Replace the PYSPARK_VERSION with the version you obtained above
 
+## Kafka Debug
+In order to view Kafka topics and debug, follow those steps:
+1. Obtain the docker CONTAINER ID:
+```bash
+docker ps
+```
+You will see the result:
+```bash
+CONTAINER ID   IMAGE                COMMAND                  CREATED         STATUS         PORTS                    NAMES
+abc123def456   apache/kafka:latest   "some-command-here"     10 minutes ago  Up 10 minutes  0.0.0.0:9092->9092/tcp   kafka_container
+```
+2. Run the following command to list Kafka topics:
+```bash
+docker exec -it <container_id_or_name> /opt/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --list
+```
