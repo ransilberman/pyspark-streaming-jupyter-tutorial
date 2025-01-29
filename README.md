@@ -60,3 +60,7 @@ abc123def456   apache/kafka:latest   "some-command-here"     10 minutes ago  Up 
 ```bash
 docker exec -it <container_id_or_name> /opt/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --list
 ```
+Result may look like the following:
+```bash
+wikimedia_topic_1
+```
