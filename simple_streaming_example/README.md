@@ -46,8 +46,12 @@ jupyter-notebook
 - Replace the PYSPARK_VERSION with the version you obtained above
 
 ## Kafka Debug
+1. Start Kafka in container
+```bash
+docker run -p 9092:9092 apache/kafka:latest
+```
 In order to view Kafka topics and debug, follow those steps:
-1. Obtain the docker CONTAINER ID:
+2. Obtain the docker CONTAINER ID:
 ```bash
 docker ps
 ```
@@ -56,7 +60,7 @@ You will see the result:
 CONTAINER ID   IMAGE                COMMAND                  CREATED         STATUS         PORTS                    NAMES
 abc123def456   apache/kafka:latest   "some-command-here"     10 minutes ago  Up 10 minutes  0.0.0.0:9092->9092/tcp   kafka_container
 ```
-2. Run the following command to list Kafka topics:
+3. Run the following command to list Kafka topics:
 ```bash
 docker exec -it <container_id_or_name> /opt/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --list
 ```
@@ -64,7 +68,7 @@ Result may look like the following:
 ```bash
 wikimedia_topic_1
 ```
-3. Describe a certain topic:
+4. Describe a certain topic:
 ```bash
 docker exec -it <container_id_or_name> /opt/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --describe --topic <topic_name>
 ```
@@ -72,4 +76,8 @@ Result may look like this:
 ```bash
 Topic: wikimedia_topic_1	TopicId: 1PFZVJkIT9ex7Cx-AycgtA	PartitionCount: 1	ReplicationFactor: 1	Configs: segment.bytes=1073741824
 	Topic: wikimedia_topic_1	Partition: 0	Leader: 1	Replicas: 1	Isr: 1	Elr: 	LastKnownElr:
+```
+5. Consome latest events in a Kafka topic in Console
+```bash
+docker exec -it <container_id_or_name> /opt/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic <topic_name> [--from-beginning]
 ```
