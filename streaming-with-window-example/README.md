@@ -17,7 +17,7 @@ jupyter-notebook
 2. Open a new notebook
 - In the web console that opens, open a new notebook of Python 3
 7. Test a demo notebook
-- Copy the content of the file [streaming-with-window-example/streaming_window.ipynb](https://github.com/ransilberman/pyspark-streaming-jupyter-tutorial/blob/main/streaming-with-window-example/streaming_window.ipynb)
+- Copy the content of the file [streaming_window.ipynb](https://github.com/ransilberman/pyspark-streaming-jupyter-tutorial/blob/main/streaming-with-window-example/streaming_window.ipynb)
 - Replace the `SPARK_HOME` value with the SPARK_HOME that you obtained in step #4.
 - Replace the PYSPARK_VERSION with the version you obtained above
 
