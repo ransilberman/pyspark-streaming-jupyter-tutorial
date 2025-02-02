@@ -15,7 +15,7 @@ source .venv3.9/bin/activate
 ```bash
 pip install jupyter
 pip install kafka-python
-pip install pyspark
+pip install pyspark==3.2.0
 pip install findspark
 pip install requests
 pip install sseclient
