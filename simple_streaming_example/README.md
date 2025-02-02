@@ -45,7 +45,7 @@ For EC2 virtual machine, run:
 ```bash
 jupyter-notebook --ip=0.0.0.0 --port=8888 --no-browser
 ```
-then open the broser with the url <http://<your_buclic_ec2_ip:8888>>
+then open the broser with the url http://<your_buclic_ec2_ip>:8888
 The UI will prompt for a token. Obtain the token from the console output
 6. Open a notebook
 - In the web console that opens, open a new notebook of Python 3
