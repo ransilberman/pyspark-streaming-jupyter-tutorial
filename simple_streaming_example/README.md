@@ -8,8 +8,8 @@ python3.6 --version
 ```
 2. Open Python venv
 ```bash
-python3.6 -m venv .venv3.6
-source .venv3.6/bin/activate
+python3.9 -m venv .venv3.9
+source .venv3.9/bin/activate
 ```
 3. Install necessary packages
 ```bash
