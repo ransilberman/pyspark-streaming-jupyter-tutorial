@@ -35,9 +35,18 @@ The result may look like this:
 - Copy the string without the module name `__init__.py` to use as the `SPARK_HOME`
 - Copy the pyspark version
 5. Run Jupyter
+For local machine, run:
 ```bash
-jupyter-notebook
+jupyter-notebook 
 ```
+A browser will be opened.
+
+For EC2 virtual machine, run:
+```bash
+jupyter-notebook --ip=0.0.0.0 --port=8888 --no-browser
+```
+then open the broser with the url <http://<your_buclic_ec2_ip:8888>>
+The UI will prompt for a token. Obtain the token from the console output
 6. Open a notebook
 - In the web console that opens, open a new notebook of Python 3
 7. Test a demo notebook
