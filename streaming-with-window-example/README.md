@@ -2,7 +2,7 @@
 Tutorial for Pyspark Structured Streaming with Window Operations
 
 ## Setup
-1. Follow Setup from simple_streaming_example/pyspark_structured_streaming.ipynb [simple_streaming_example/pyspark_structured_streaming.ipynb](https://github.com/ransilberman/pyspark-streaming-jupyter-tutorial/blob/main/simple_streaming_example/pyspark_structured_streaming.ipynb)
+1. Follow Setup from simple_streaming_example/pyspark_structured_streaming.ipynb [simple_streaming_example/README.md](https://github.com/ransilberman/pyspark-streaming-jupyter-tutorial/blob/main/simple_streaming_example/README.md)
 
 ## Run Kafka
 1. Start Kafka container as described in simple_streaming_example/pyspark_structured_streaming.ipynb
