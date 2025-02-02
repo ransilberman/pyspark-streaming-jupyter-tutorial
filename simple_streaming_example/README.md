@@ -1,6 +1,20 @@
 # Pyspark Streaming Jupyter Tutorial
 Tutorial for Pyspark Structured Streaming with Kafka + Jupyter
 
+## Prerequisites
+1. Install Java JRE 1.8
+Java JRE 1.8 is required to work well with PySpark. Newer versions may not work
+On EC2, use the `amazon-corretto` release:
+```bash
+sudo yum install java-1.8.0-amazon-corretto.x86_64
+export JAVA_HOME=$(readlink -f $(which java) | sed "s:/bin/java::")
+echo 'export JAVA_HOME=$(readlink -f $(which java) | sed "s:/bin/java::")' >> ~/.bashrc
+```
+Make sure JAVA_HOME is set:
+```bash
+echo $JAVA_HOME
+```
+
 ## Setup
 1. Check your Python Version
 ```bash
