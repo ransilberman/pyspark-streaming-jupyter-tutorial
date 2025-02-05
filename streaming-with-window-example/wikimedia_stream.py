@@ -1,13 +1,11 @@
-import os
-import pyspark
-import time
-from kafka import KafkaProducer
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, expr
 from pyspark.sql.types import StructType, StringType, IntegerType
 from pyspark.streaming import StreamingContext
 from sseclient import SSEClient
-
+from kafka import KafkaProducer
+import os
+import time
 os.environ['SPARK_HOME'] = "/Users/ran/pyspark/.venv/lib/python3.11/site-packages/pyspark/"
 os.environ['PYSPARK_DRIVER_PYTHON'] = 'jupyter'
 os.environ['PYSPARK_DRIVER_PYTHON_OPTS'] = 'lab'
