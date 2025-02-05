@@ -20,4 +20,5 @@ jupyter-notebook
 - Copy the content of the file [streaming_window.ipynb](https://github.com/ransilberman/pyspark-streaming-jupyter-tutorial/blob/main/streaming-with-window-example/streaming_window.ipynb)
 - Replace the `SPARK_HOME` value with the SPARK_HOME as in previous module.
 - Replace the PYSPARK_VERSION with the version you obtained in previous version
+- run the program inside a .venv by typing `python streaming_window.py`
 
