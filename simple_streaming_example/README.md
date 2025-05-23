@@ -16,7 +16,7 @@ echo $JAVA_HOME
 ```
 
 ## Setup
-1. Check your Python Version. Obtain 3.9 version (or any version that is compatible with PySpark Structure Streaming)
+1. Check your Python Version. Obtain 3.9 version (or any version that is compatible with PySpark3.2 Structure Streaming)
 ```bash
 python3.9 --version
 ```
