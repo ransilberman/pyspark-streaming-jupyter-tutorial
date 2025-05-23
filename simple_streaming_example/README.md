@@ -18,7 +18,7 @@ echo $JAVA_HOME
 ## Setup
 1. Check your Python Version
 ```bash
-python3.6 --version
+python3.9 --version
 ```
 2. Open Python venv
 ```bash
