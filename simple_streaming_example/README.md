@@ -63,7 +63,7 @@ then open the broser with the url http://<your_buclic_ec2_ip>:8888
 The UI will prompt for a token. Obtain the token from the console output
 6. Open a notebook
 - In the web console that opens, open a new notebook of Python 3
-7. Test a demo notebook
+7. Test a demo notebook (Note that you need Kafka broker running. See below)
 - Copy the content of the file [pyspark_structured_streaming.ipynb](https://github.com/ransilberman/pyspark-streaming-jupyter-tutorial/blob/main/simple_streaming_example/pyspark_structured_streaming.ipynb)
 - Replace the `SPARK_HOME` value with the SPARK_HOME that you obtained in step #4.
 - Replace the PYSPARK_VERSION with the version you obtained above
