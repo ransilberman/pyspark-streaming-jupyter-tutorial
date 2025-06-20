@@ -34,21 +34,7 @@ pip install findspark
 pip install requests
 pip install sseclient
 ```
-4. Find the full path of PySpark Home directrory
-Open python console by typing 'python3', then:
-```python
-import pyspark
-print(pyspark.__file__)
-print(pyspark.__version__)
-```
-The result may look like this:
-```
-/Users/myuser/projects/pyspark/.venv/lib/python3.11/site-packages/pyspark/__init__.py
-3.5.4
-```
-- Copy the string without the module name `__init__.py` to use as the `SPARK_HOME`
-- Copy the pyspark version
-5. Run Jupyter
+4. Run Jupyter
 For local machine, run:
 ```bash
 jupyter-notebook 
@@ -61,9 +47,9 @@ jupyter-notebook --ip=0.0.0.0 --port=8888 --no-browser
 ```
 then open the broser with the url http://<your_buclic_ec2_ip>:8888
 The UI will prompt for a token. Obtain the token from the console output
-6. Open a notebook
+5. Open a notebook
 - In the web console that opens, open a new notebook of Python 3
-7. Test a demo notebook (Note that you need Kafka broker running. See below)
+6. Test a demo notebook (Note that you need Kafka broker running. See below)
 - Copy the content of the file [pyspark_structured_streaming.ipynb](https://github.com/ransilberman/pyspark-streaming-jupyter-tutorial/blob/main/simple_streaming_example/pyspark_structured_streaming.ipynb)
 - Replace the `SPARK_HOME` value with the SPARK_HOME that you obtained in step #4.
 - Replace the PYSPARK_VERSION with the version you obtained above
