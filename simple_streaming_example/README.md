@@ -36,12 +36,15 @@ jupyter-notebook
 ```
 A browser will be opened.
 
+If you run on local PC, skip to step 5.
+
 In case you run linux on EC2 virtual machine and not on your local PC, run:
 ```bash
 jupyter-notebook --ip=0.0.0.0 --port=8888 --no-browser
 ```
 then open the broser with the url http://<your_buclic_ec2_ip>:8888
 The UI will prompt for a token. Obtain the token from the console output
+
 5. Open a notebook
 - In the web console that opens, open a new notebook of Python 3
 6. Test a demo notebook (Note that you need Kafka broker running. See below)
