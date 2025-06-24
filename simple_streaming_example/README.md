@@ -36,7 +36,7 @@ jupyter-notebook
 ```
 A browser will be opened.
 
-For EC2 virtual machine, run:
+In case you run linux on EC2 virtual machine and not on your local PC, run:
 ```bash
 jupyter-notebook --ip=0.0.0.0 --port=8888 --no-browser
 ```
