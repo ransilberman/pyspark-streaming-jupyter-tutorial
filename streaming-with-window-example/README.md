@@ -6,7 +6,7 @@ Tutorial for Pyspark Structured Streaming with Window Operations
 
 ## Run Kafka
 1. Start Kafka container as described in simple_streaming_example/pyspark_structured_streaming.ipynb
-2. Run a KafkaProducer program that reads Wikimedia changes and writes them to Kafka topic
+2. Ona new console, run a KafkaProducer program that reads Wikimedia changes and writes them to Kafka topic
 Python code is found here: [wikimedia_stream.py](https://github.com/ransilberman/pyspark-streaming-jupyter-tutorial/blob/main/streaming-with-window-example/wikimedia_stream.py)
 
 ## Open Jupiter
