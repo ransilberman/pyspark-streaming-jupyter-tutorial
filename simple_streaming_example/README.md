@@ -10,7 +10,8 @@ Make sure JAVA_HOME is set:
 echo $JAVA_HOME
 ```
 
-## Setup
+# Setup 
+## (1) Setup Jupyter:
 1. Check your Python Version. Obtain 3.11 version (or any version that is compatible with PySpark4.1 Structure Streaming)
 ```bash
 python --version
@@ -45,10 +46,12 @@ The UI will prompt for a token. Obtain the token from the console output
 - In the web console that opens, open a new notebook of Python 3
 6. Test a demo notebook (Note that you need Kafka broker running. See below)
 - Copy the content of the file [pyspark_structured_streaming.ipynb](https://github.com/ransilberman/pyspark-streaming-jupyter-tutorial/blob/main/simple_streaming_example/pyspark_structured_streaming.ipynb)
-- Replace the `SPARK_HOME` value with the SPARK_HOME that you obtained in step #4.
-- Replace the PYSPARK_VERSION with the version you obtained above
 
-## Kafka Debug
+## (2) Setup Docker
+Install and run docker on your PC in order to run Kafka container
+SEe [Get Started with Docker](https://www.docker.com/get-started/)
+
+## (3) Setup Kafka
 1. Start Kafka in container
 ```bash
 docker run -p 9092:9092 apache/kafka:latest
@@ -63,7 +66,9 @@ You will see the result:
 CONTAINER ID   IMAGE                COMMAND                  CREATED         STATUS         PORTS                    NAMES
 abc123def456   apache/kafka:latest   "some-command-here"     10 minutes ago  Up 10 minutes  0.0.0.0:9092->9092/tcp   kafka_container
 ```
-3. Run the following command to list Kafka topics:
+# Lookup Kafka Topics
+After Kafka is run and after data was sent to a Kafka topic, you can see its content:
+1. Run the following command to list Kafka topics:
 ```bash
 docker exec -it <container_id_or_name> /opt/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --list
 ```
@@ -71,7 +76,7 @@ Result may look like the following:
 ```bash
 wikimedia_topic_1
 ```
-4. Describe a certain topic:
+2. Describe a certain topic:
 ```bash
 docker exec -it <container_id_or_name> /opt/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --describe --topic <topic_name>
 ```
@@ -80,7 +85,7 @@ Result may look like this:
 Topic: wikimedia_topic_1	TopicId: 1PFZVJkIT9ex7Cx-AycgtA	PartitionCount: 1	ReplicationFactor: 1	Configs: segment.bytes=1073741824
 	Topic: wikimedia_topic_1	Partition: 0	Leader: 1	Replicas: 1	Isr: 1	Elr: 	LastKnownElr:
 ```
-5. Consome latest events in a Kafka topic in Console
+3. Consome latest events in a Kafka topic in Console
 ```bash
 docker exec -it <container_id_or_name> /opt/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic <topic_name> [--from-beginning]
 ```
