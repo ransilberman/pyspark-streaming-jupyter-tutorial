@@ -25,7 +25,6 @@ source .venv3.11/bin/activate
 change to directory you already created: pyspark
 ```bash
 cd ~/pyspark
-source .venv3.11/bin/activate
 ```
 
 3. Install jupyter package
