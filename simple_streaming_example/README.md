@@ -2,7 +2,7 @@
 Tutorial for Pyspark Structured Streaming with Kafka + Jupyter
 
 ## Prerequisites
-1. Install [Java 21](https://www.oracle.com/il-en/java/technologies/downloads/#java21) 
+1. Install [Java 21](https://www.oracle.com/il-en/java/technologies/downloads/#java21).  
 Java JRE is required to work well with PySpark. 
 
 Make sure JAVA_HOME is set:
