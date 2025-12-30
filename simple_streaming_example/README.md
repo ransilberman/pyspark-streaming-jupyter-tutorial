@@ -11,20 +11,20 @@ echo $JAVA_HOME
 ```
 
 ## Setup
-1. Check your Python Version. Obtain 3.9 version (or any version that is compatible with PySpark3.2 Structure Streaming)
+1. Check your Python Version. Obtain 3.11 version (or any version that is compatible with PySpark4.1 Structure Streaming)
 ```bash
-python3.9 --version
+python --version
 ```
 2. Open Python venv
 ```bash
-python3.9 -m venv .venv3.9
-source .venv3.9/bin/activate
+python3.11 -m venv .venv3.11
+source .venv3.11/bin/activate
 ```
 3. Install necessary packages
 ```bash
 pip install jupyter
 pip install kafka-python
-pip install pyspark==3.2.0
+pip install pyspark
 pip install findspark
 pip install requests
 pip install sseclient
@@ -38,7 +38,8 @@ A browser will be opened.
 
 If you run on local PC, skip to step 5.
 
-In case you run linux on EC2 virtual machine and not on your local PC, run:
+In case you run linux on EC2 virtual machine and not on your local PC, you will need to forward the browser to your local machine.
+run:
 ```bash
 jupyter-notebook --ip=0.0.0.0 --port=8888 --no-browser
 ```
