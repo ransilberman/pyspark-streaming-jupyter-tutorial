@@ -51,7 +51,7 @@ The UI will prompt for a token. Obtain the token from the console output
 5. Open a notebook
 - In the web console that opens, open a new notebook of Python 3
 6. Run the notebook (Note that you need Docker and Kafka broker running. See below)
-- Use the Notebook [pyspark_structured_streaming.ipynb](https://github.com/ransilberman/pyspark-streaming-jupyter-tutorial/blob/main/simple_streaming_example/pyspark_structured_streaming.ipynb)
+- Use the Notebook [pyspark_structured_streaming_wikimedia.ipynb.ipynb](https://github.com/ransilberman/pyspark-streaming-jupyter-tutorial/blob/main/simple_streaming_example/pyspark_structured_streaming_wikimedia.ipynb.ipynb)
 
 ## (2) Setup Docker
 Install and run docker on your PC in order to run Kafka container
