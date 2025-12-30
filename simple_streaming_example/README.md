@@ -20,19 +20,14 @@ python --version
 python3.11 -m venv .venv3.11
 source .venv3.11/bin/activate
 ```
-3. Install necessary packages
+3. Install jupyter package
 ```bash
 pip install jupyter
-pip install kafka-python
-pip install pyspark
-pip install findspark
-pip install requests
-pip install sseclient
 ```
 4. Run Jupyter
 For local machine, run:
 ```bash
-jupyter-notebook 
+jupyter notebook 
 ```
 A browser will be opened.
 
