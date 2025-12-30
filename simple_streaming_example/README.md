@@ -17,12 +17,12 @@ In this exercise, you will poll stream of updates from Wikimedia.
 In order to do this, you will need to create a user in Wikimedia and obtain an Access Token.
 
 1. The follow page explains how to use Wikimedia API with Python [Getting_featured_content_from_Wikipedia_with_Python](https://api.wikimedia.org/wiki/Getting_featured_content_from_Wikipedia_with_Python)
-2. This page shows how to [create authentication](https://api.wikimedia.org/wiki/Special:AppManagement))
+2. This page shows how to [create authentication](https://api.wikimedia.org/wiki/Special:AppManagement)
 3. Click the 'Create Key' button
 4. Use the key type 'Personal API Token' and fill all the required fields
 5. After clicking 'create' you will get your Access Token. Save it to be used later.
 
-## (1) Setup Jupyter:
+## (2) Setup Jupyter:
 1. Check your Python Version. Obtain 3.11 version (or any version that is compatible with PySpark4.1 Structure Streaming)
 ```bash
 python --version
@@ -64,12 +64,12 @@ The UI will prompt for a token. Obtain the token from the console output
 6. Run the notebook (Note that you need Docker and Kafka broker running. See below)
 - Use the Notebook [pyspark_structured_streaming_wikimedia.ipynb](https://github.com/ransilberman/pyspark-streaming-jupyter-tutorial/blob/main/simple_streaming_example/pyspark_structured_streaming_wikimedia.ipynb)
 
-## (2) Setup Docker
+## (3) Setup Docker
 Install and run docker on your PC in order to run Kafka container
 
 See [Get Started with Docker](https://www.docker.com/get-started/)
 
-## (3) Setup Kafka
+## (4) Setup Kafka
 1. Start Kafka in container
 ```bash
 docker run -p 9092:9092 apache/kafka:latest
