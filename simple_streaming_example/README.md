@@ -49,7 +49,8 @@ The UI will prompt for a token. Obtain the token from the console output
 
 ## (2) Setup Docker
 Install and run docker on your PC in order to run Kafka container
-SEe [Get Started with Docker](https://www.docker.com/get-started/)
+
+See [Get Started with Docker](https://www.docker.com/get-started/)
 
 ## (3) Setup Kafka
 1. Start Kafka in container
